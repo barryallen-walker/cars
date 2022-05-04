@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Patrick+Hand+SC&family=Permanent+Marker&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$black  : #0C120C;
+$red    : #C20114;
+$nickel : #6D7275;
+$lightgrey  : #C7D6D5;
+$white  : #ECEBF3;
+
+body{
+    *{margin: 0;padding: 0;box-sizing: border-box;}
+
+    height:fit-content; position :relative;
+    animation: loadpage 2s;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.7em;
+    font-weight: 600;
+    font-size: 16px;
+    color: $black;
+    height: fit-content;
+
+    a{
+        text-decoration: none;
+        color: $white;
+        &:hover{
+            color: $black;
+        }
+    }
+    p{
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    h1, h2, h3, h4{
+        font-family: 'Patrick Hand SC', cursive;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 15px;
+        z-index: 99;
+        font-size: 25px;
+        border: none;
+        outline: none;
+        background-color: $black;
+        color: white;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 15%;
+    }
+    #myBtn:hover {
+        background-color: $red;
+    }
+    .icon{
+        margin-left: 5px;
+        margin-right: 5px;
+        a{
+            &:hover{
+                color: $black;
+                border-color: $black;
+            }
+
+        }
+    }
+    .form-control{
+        font-family: 'Patrick Hand SC', cursive;
+        text-transform: uppercase;
+    }
+    .header-top{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-family: 'Patrick Hand SC', cursive;
+        font-size: 14px;
+        text-transform: uppercase;
+        background-color: $black;
+        .content{
+            color: $white;
+            p{
+                padding-right: 5px;
+            }
+            .login{
+                padding-right: 5px;
+            }
+            a{
+                text-decoration: none;
+                color: $white;
+                &:hover{
+                    color: $red;
+                }
+            }
+        }
+    }
+    .navbar-choice1{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .navbar-choice2{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    .navbar{
+        // padding-right: 0.75rem;
+        // padding-left: 0.75rem;
+        background-color: $red;
+        color: $white;
+        text-transform: uppercase;
+        .nav-item{
+            &:hover{
+                .nav-link{
+
+                    color: $black !important;
+                }
+                background-color: $lightgrey;
+            }
+        }
+        .social-icons{
+            p{
+                border: 1px solid;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+        }
+    }
+    .slider{
+        .container-fluid{
+            // padding-right: 0;
+            // padding-left: 0;
+        }
+        background-color: #C20114;
+        padding-bottom: .6rem;
+        .slider-content{
+            .carousel{
+                position: relative;
+                .search-car{
+                    position: absolute;
+                    max-width: 100%;
+                    width: 100%;
+                    z-index: 5;
+                    bottom: 50px;
+                    .search-car-content{
+                        h1{color: $white;}
+                        p{color: $white;}
+                        max-width: 100%;
+                        width: 100%;
+                        padding: 15px;
+                        .input-group{
+                            width: 100% ;
+                        }
+                        .search-btn{
+                            padding: 0.8rem 1rem;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: $white;
+                            &:hover{
+                                color: lightseagreen;
+                            }
+                        }
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+            }
+        }
+    }
+    .about{
+        background-color: $black;
+        color: $white;
+        height: fit-content;
+        overflow: hidden;
+        .arrow {
+            margin: 0 0 15px 0;
+        }
+        .both {
+            line-height: 0.5;
+            text-align: center;
+        }
+        .both span {
+            display: inline-block;
+            position: relative;  
+        }
+        .both span:before,
+        .both span:after {
+            content: "";
+            position: absolute;
+            height: 10px;
+            border-bottom: 2px solid $white;
+            border-top: 2px solid $white;
+            top: 4px;
+            width: 156px;
+            max-width: 100%;
+        }
+        .both span:before {
+            right: 100%;
+            margin-right: 15px;
+        }
+        .both span:after {
+            left: 100%;
+            margin-left: 15px;
+        }
+        .about-content{
+            max-width: 100%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            h1{
+                font-weight: 900;
+            }
+            p{
+                line-height: 1.8rem;
+            }
+        }
+        .service-content{
+            .service-icon{
+                font-size: 5em;
+                padding: 5px;
+                &:hover {
+                    animation: shake 0.5s;
+                    animation-iteration-count: infinite;
+                }
+            }
+            .service-view-all{
+                padding-top: 10px;
+                .btn-service-view{
+                    font-family: 'Patrick Hand SC', cursive;
+                    text-transform: uppercase;
+                    border-radius: 0%;
+                }
+            }
+        }
+    }
+    .car-list{
+        background-color: $white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        overflow: hidden;
+        .car-list-content{
+            max-width: 100%;
+            .arrow {
+                margin: 0 0 20px 0;
+            }
+            .right {
+                line-height: 0.5;
+                text-align: start;
+            }
+            .right span {
+                display: inline-block;
+                position: relative;  
+            }
+            .right span:after {
+                content: "";
+                position: absolute;
+                height: 10px;
+                border-bottom: 2px solid $black;
+                border-top: 2px solid $black;
+                top: 4px;
+                width: 156px;
+                max-width: 100%;
+            }
+            .right span:after {
+                left: 100%;
+                margin-left: 15px;
+            }
+            .car-panel{
+                padding-top: 5px;
+                padding-bottom: 12px;
+                height: fit-content;
+                max-width: 100%;
+                .car-image{
+                    width: 100%;
+                    max-width: 100%;
+                    height: 200px;
+                    overflow: hidden;
+                    img{
+                        // width: 356px;
+                        width: 100%;
+                        max-width: 100%;
+                        height: 200px;
+                        object-fit: cover;
+                    }
+                }
+                .panel-content-wraper{
+                    max-width: 100%;
+                    padding: 10px;
+                    background-color: $black;
+                    color: $white;
+                    .catagory-tags-wraper{
+                        h5{
+                            color: $red;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            &:hover{
+                                color: $white;
+                            }
+                        }
+                        .tags-wraper{
+                            span{
+                                padding: 0px 5px 0px 5px;
+                                font-size: .8em;
+                                font-weight: 800;
+                                color: $white;
+                                background-color: $red;
+                                margin-left: 4px;
+                                // border-radius: 20%;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                    .car-details{
+                        ul{
+                            border-top: 1px solid $lightgrey;
+                            border-bottom: 1px solid $lightgrey;
+                            list-style: none;
+                            li{
+                                display: inline-block;
+                                border-right: 1px solid $nickel;
+                                font-size: 20px;
+                                padding: 0 0.8rem;
+                                margin: 0.4rem 0;
+                                font-weight: 600;
+                            }
+                        }
+                        .details2{
+                                border-top: none;
+                                font-size: 14px;
+                                opacity: 0.8;
+                            line-height: 1.6em;
+                            // border-bottom: 1px solid $red;
+                        }
+                    }
+                    .panel-button{
+                        padding: 15px;
+                        .btn-view-details{
+                            border-radius: 0%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .partners{
+        color: $white;
+        background-color: $nickel;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        overflow: hidden;
+        .arrow {
+            margin: 0 0 20px 0;
+        }
+        .both {
+            line-height: 0.5;
+            text-align: center;
+        }
+        .both span {
+            display: inline-block;
+            position: relative;  
+        }
+        .both span:before,
+        .both span:after {
+            content: "";
+            position: absolute;
+            height: 10px;
+            border-bottom: 2px solid $white;
+            border-top: 2px solid $white;
+            top: 4px;
+            width: 156px;
+            max-width: 100%;
+        }
+        .both span:before {
+            right: 100%;
+            margin-right: 15px;
+        }
+        .both span:after {
+            left: 100%;
+            margin-left: 15px;
+        }
+        .slider-wraper{
+            max-width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            img{
+                height: 120px;
+                width: 120px;
+            }
+            // .owl-carousel span {
+            //     width:10px;
+            //     height:10px;
+            //     margin:10px 7px;
+            //     background: $white !important;
+            //     display:block;
+            //     transition:opacity 200ms ease;
+            //     border-radius:30px;
+            // }
+            .owl-carousel button{
+                width: 20px;
+                height: 5px;
+            }
+            .owl-carousel .owl-prev span{
+                font-size: 42px;
+                position: absolute;
+                top: 30%;
+                left: -3%;
+                color: red;
+                padding: 0px 4px 7px 6px;
+                background-color: $white;
+            }
+            .owl-carousel .owl-next span{
+                font-size: 42px;
+                position: absolute;
+                top: 30%;
+                right: -3%;
+                color: red;
+                padding: 0px 4px 7px 6px;
+                background-color: $white;
+            }
+        }
+    }
+    .contact{
+        padding-top: 50px;
+        padding-bottom: 40px;
+        background-image: url(../image/car-slider2.webp);
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        max-width: 100%;
+        .contact-wraper{
+            .contact-content{
+                background-color: $black;
+            }
+        }
+        .panel1-wraper{
+            color: $white;
+            // background-color: $black;
+            .form-content{
+                color: $black;
+                background-color: $white;
+                margin: 10%;
+                padding-top: 10%;
+                padding-bottom: 10%;
+                padding-left: 10%;
+                padding-right: 10%;
+                h4{
+                    font-family: 'Patrick Hand SC', cursive;
+                    text-transform: uppercase;
+                }
+                .btn-send{
+                    border: 2px solid $red;
+                    color: $red;
+                    font-weight: 900;
+                    &:hover{
+                        color: $black;
+                        border: 2px solid $black;
+                    }
+                }
+            }
+        }
+        .panel2-wraper{
+            // background-color: $black;
+            // max-width: 100%;
+            .content{
+                padding: 20px 10px 20px 0px;
+            }
+            .map{
+                max-width: 100%;
+            }
+            .map-title{
+                background-color: $white;
+                padding: 10px;
+                h4{
+                    font-family: 'Patrick Hand SC', cursive;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .footer{
+        padding-top: 50px;
+        // padding-bottom: 40px;
+        color: $white;
+        background-color: $black;
+        border-bottom: 1px solid $white;
+        .line { border: 1px solid $red; width: 50%; margin: auto; margin-top: 5%; margin-bottom: 5%; margin-left: 0%;}
+    }
+    .footer-bottom{
+        padding-top: 17px;
+        padding-bottom: 17px;
+        color: $white;
+        background-color: $black;
+    }
+}
+@keyframes loadpage {0%{opacity:0;} 100%{opacity:1;}}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
